@@ -92,7 +92,7 @@ extend your command search path to include the Go bin directory
 
 with node.js and python2.7, you can develop applications with fabric node.js sdk.
 
-# fabric sample
+# prepare fabric sample
 
 ## automatical execution
 
@@ -112,7 +112,12 @@ and run the script
 
 `./script/bootstrap.sh`
 
-after the program execution completed,check your *bin* directory in current workspace. 
+this script does following things
+1. clone fabric-sample repo, and checkout v2.1.0
+2. download binaries and config files
+3. download docker images
+
+after the program execution completed,check your *bin* and *config* directory in current workspace. make sure these two directories are inside *fabric-sample* directory.
 
 there will be several binaries. you could add the *bin* path into PATH environment variable for convenience.
 - configtxgen
@@ -124,9 +129,4 @@ there will be several binaries. you could add the *bin* path into PATH environme
 - idemixgen
 - orderer
 - peer
-
-
-
-
-
 
